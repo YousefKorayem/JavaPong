@@ -4,6 +4,7 @@ import java.awt.event.*;
 import java.util.*;
 import javax.swing.*;
 
+@SuppressWarnings("serial")
 public class GamePanel extends JPanel implements Runnable{
 	
 	static final int GAME_WIDTH = 1000;
@@ -145,7 +146,7 @@ public class GamePanel extends JPanel implements Runnable{
 		
 		public void keyReleased(KeyEvent e) {
 			paddle1.keyReleased(e);
-			paddle2.keyPressed(e);
+			paddle2.keyReleased(e);
 		}
 		
 	}
